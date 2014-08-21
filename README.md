@@ -75,7 +75,7 @@ This test plan covers basic UI functionality as would be required for general us
     - Subsidiary page loads
     - page content
     - internal links
-    - drop downn menus
+    - drop down menus
     - HCI newsletter subscribe
     - Search
     - client center
@@ -185,8 +185,9 @@ webdriver.Remote()
 - ?
 
 **Alternatives:**   
-- [test_alternatives.md]
-
+- python script using urllib2 running on Google App Engine triggered either from the command line or at regular intervals from a 3rd party (eg Pingdom)
+- [robot + selenium video tutorials]
+- [multi-mechanize]
 
 
 
@@ -214,7 +215,7 @@ _______________________________
 
 _______________________________
 
-[se-builder-testSuite]:https://github.com/jayjaycody/web-app-tests/tree/master/se-builder-testSuite
+[se-builder-testSuite]:
 [interactive sketching notation]:http://www.linowski.ca/downloads/InteractiveSketchingNotation_0.1.pdf
 [Selenium WebDriver]:http://docs.seleniumhq.org/docs/03_webdriver.jsp
 [Python]:http://selenium-python.readthedocs.org
@@ -227,7 +228,7 @@ _______________________________
 [Selenium Builder]:http://sauceio.com/index.php/2013/03/building-a-ci-system-using-selenium-builder-github-travis-and-sauce-labs/
 [Robot Framework]:https://github.com/robotframework/robotframework
 [Page Object Model]:http://martinfowler.com/bliki/PageObject.html
-[unittests]:https://github.com/jayjaycody/web-app-tests/tree/master/unittests
+[unittests]:
 [Automation Engineer]:http://linkedin.com/in/videoalchemy/
 [HCI]:http://healthycommunitiesinstitute.com
 [robot + selenium video tutorials]:http://robotframework.org/#documentation
