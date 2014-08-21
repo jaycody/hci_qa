@@ -25,15 +25,16 @@ _________________________________
 _________________________________
 
 ###2. Required Steps
-1. **Elucidate app's existing workflow**  
-    - what does it do?  
-2. **Transform the workflow into test scripts**  
-    - automate verification of what it supposed to do (Selenium WebDriver, Python)  
-3. **Prioritize the maintenance and version-control of test scripts**
-4. **Automate test run on checkin via github plugin**
-    - now automate the execution of the automated tests (Jenkins, github, SauceLabs)
-5. **Use the test results!**
-    - pipe test output as an input to appropriate players
+1. **Elucidate existing workflow (website and test documentation)**  
+    - what does it do? and how?
+2. **Transform the website workflow into test scripts**  
+    - automate the verification of test cases with Python and Selenium WebDriver
+    - establish version control for test scripts and documentation
+3. **Automate test run**
+    - trigger on checkin via github plugin AND at regular intervals via Pingdom
+4. **Pipe test output as required*
+    - useful graphics, regular updates
+    - documentation as source of truth
 
 _________________________
 
@@ -43,11 +44,11 @@ _________________________
 2. **Learn the workflow and generate a UI sketch** 
     - use [interactive sketching notation] and Illustrator
 3. **Define requirements for functional testing** 
-    - Can't test everything, so what are we most concerned with? 
+    - top priorities
     - create the input, determine the output, compare to expected 
-4. **Determine what to do with test results?**
+4. **Determine procedure for writing and running test scripts**
+5. **Determine what to do with test results**
     - Who receives the auto-emailed failure notifications?  SMS?
-5. **Determine who writes the scripts, who runs the sripts, and who's waiting for results**
 6. **Identify process and next steps**
 
 #####Assessment for Version 2 of the automation project:
@@ -62,34 +63,36 @@ _________________________
 _____________________________
 
 ###4. Test Coverage  
-This test plan covers basic UI functionality as would be required for general user scenarios within a wide variety of environments and platforms.
+This test plan covers basic UI and DB functionality as would be required for general user and client scenarios within a wide variety of environments and platforms.
 
 ####**In-Scope:**
-- **Platforms and Environments**
-    - **MOBILE:**
-        - All major mobile browsers for current and recent versions iOS and Android
-    - **Desktop:**
-        - All major browsers for all current and recent versions of Mac OS and Windows 
+#####Platforms and Environments
+- **MOBILE:**
+  - All major mobile browsers for current and recent versions iOS and Android
+- **Desktop:**
+  - All major browsers for all current and recent versions of Mac OS and Windows 
     
-- **Features covered in this test plan**
-    - Page Load (main)
-    - Subsidiary page loads
-    - page content
-    - internal links
-    - drop down menus
-    - HCI newsletter subscribe
-    - Search
-    - client center
-    - client login
-    - switching client accounts
-    - client permissions
-    - promotions (eg limited-time incentives)
-    - on-demand webinar replay
-    - videos (eg overview of HCI embedded options)
-    - social-media links
-    - online demos functionality
-    - scheduling online demos
-    - user feedback popup menu
+#####Features covered in this test plan
+- **All Users:**
+  - Page Load (main)
+  - Subsidiary page loads
+  - page content
+  - internal links
+  - drop down menus
+  - HCI newsletter subscribe
+  - Search
+  - promotions (eg limited-time incentives)
+  - on-demand webinar replay
+  - videos (eg overview of HCI embedded options)
+  - social-media links
+  - online demos functionality
+  - scheduling online demos
+  - user feedback popup menu
+- **Clients:**
+  - client center
+  - client login
+  - switching client accounts
+  - client permissions
 
 
 ####**v.2:**
@@ -117,12 +120,13 @@ ___________________________________
 
 
 
-###6. Method
+###6. Method:
+
 ####Step 0. Devise test documentation procedures
 - what's the current HCI documentation method?
 - determine ongoing format (wiki? google docs, asana)
 - solidify best practices (naming conventions, layout, frequency, etc)
-- transfer, update, rebuild, rewrite, reintegrate current test documentation
+- transfer, update, rebuild, rewrite, reintegrate current test documentation as required
 - references:
   - [IEEE 823-2012]
   - [IEEE 1012-2004]
@@ -143,7 +147,7 @@ ___________________________________
 - from SE-Builder prototypes, port test cases to Python
 - fix translation issues caused by porting test cases
 - expand unittest features
-- modify test cases to run from command line
+- add command line interface to test cases
 
 ####Step 3. Modify Python test scripts to run multi-platform tests remotely
 - to run test cases on remote servers, add:
@@ -153,7 +157,7 @@ webdriver.Remote()
 - update setUp() to extend test case testing environment by specifying browsers, versions and platform
 - add SauceLab account login for access to remote test servers
 - improve error reporting: switch test framework from **unittest** to **[pytest]**
-- why use **[pytest]**
+- why **[pytest]**
     - improved reporting
     - run test cases as a single test suite
     - test in parallel on multiple platforms
@@ -177,20 +181,24 @@ webdriver.Remote()
 - objective:  trigger execution of test suite at regular intervals AND upon change to code base
 - connect [Github] <-> [Jenkins] <-> [SauceLabs]
 - [Travis] - continuous integration platform
+- Pingdom and Google App Engine for regular interval testing.  
+- Alternative:  setup cron job on a remote server. (investigate)
 
 ####Step 5. Improve test script resilience: implement code abstractions
 - [Page Object Model]
+- Test Fixtures
+- share common login procedures via pytest
 - provide a test interface for developers and staff
 
 ####Step 6. Feedback - Recommendations - Alternatives
 
-**Feedback:**  
+#####Feedback:  
 - ?
 
-**Recommendations:**    
+#####Recommendations:    
 - ?
 
-**Alternatives:**   
+#####Alternatives:
 - python script using urllib2 running on Google App Engine triggered either from the command line or at regular intervals from a 3rd party (eg Pingdom)
 - [robot + selenium video tutorials]
 - [multi-mechanize]
@@ -200,17 +208,17 @@ webdriver.Remote()
 __________________________________
 
 
-###7. Defect Management
-- error reporting:
-    - pytests
-    - Dashboard on SauceLabs
-    - triggered emails
-    - In-office Alert System
-        - sirens and blinking lights triggered when Raspberry Pi detects error msg
-- bug tracking
-    - HCI's current system?
-    - Asana
-    - Jira 
+###7. Defect Management:
+#####error reporting:
+- pytests
+- Dashboard on SauceLabs
+- triggered emails
+- In-office Alert System
+    - sirens and blinking lights triggered when Raspberry Pi detects error msg
+#####bug tracking
+- HCI's current system?
+- Asana
+- Jira 
 
 _______________________________
 
