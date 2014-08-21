@@ -4,7 +4,7 @@
 
 ________________________
 
-###Test Plan Overview:
+###Overview:
 [1. Objectives](#1-objectives)  
 [2. Required Steps](#2-required-steps)  
 [3. Assessment Phase](#3-assessment-phase)    
@@ -21,35 +21,47 @@ _________________________________
 - Continuously verify and validate HCI website functionality according to specs and requirements. 
 - Build and deploy a test automation framework capable of continuous verification and validation of the HCI website.
 - Devise and implement documentation conventions
+- Review QA procedures (you know, for the new guy)
 
 _________________________________
 
 ###2. Required Steps
 1. **Elucidate existing workflow (website and test documentation)**  
     - what does it do? and how?
-2. **Transform the website workflow into test scripts**  
-    - automate the verification of test cases with Python and Selenium WebDriver
-    - establish version control for test scripts and documentation
+2. **Transform the website workflow into test scripts**
+    - create test cases for each feature
+    - create test suite for each use case
+    - automate the verification of features and use cases
+    - establish version control for test scripts and related documentation
 3. **Automate test run**
-    - trigger on checkin via github plugin AND at regular intervals via Pingdom
-4. **Pipe test output as required*
-    - useful graphics, regular updates
-    - documentation as source of truth
+    - trigger test scripts on checkin AND at regular intervals
+4. **Pipe test output and documentation as required**
+    - useful graphics and regular updates - to whom?
+    - where is source of truth?
 
 _________________________
 
 ###3. Assessment Phase
 1. **Learn who's who.**
     - introductions, roles, responsibilities
-2. **Learn the workflow and generate a UI sketch** 
-    - use [interactive sketching notation] and Illustrator
-3. **Define requirements for functional testing** 
-    - top priorities
-    - create the input, determine the output, compare to expected 
-4. **Determine procedure for writing and running test scripts**
-5. **Determine what to do with test results**
-    - Who receives the auto-emailed failure notifications?  SMS?
+2. **Learn the workflow and generate a UI sketch**
+    - document the documentation procedures
+    - for UI/UX, use [interactive sketching notation], Illustrator, and tablet
+3. **Define current and desired requirements for functional testing** 
+    - priorities
+    - inputs, outputs, and expectations 
+4. **Determine current and desired procedures for writing and running test scripts**
+    - version control
+    - test framework
+    - test location
+5. **Determine current and desired pipeline for test results**
+    - examples of current failure notifications (content and delivery method)
+    - Where do the auto-emailed failure notifications?  SMS?
+    - Logs and log archives
 6. **Identify process and next steps**
+    - what requires updating? and what remains the same?
+    - timeline and priortization of required updates
+    - schedule deliverables
 
 #####Assessment for Version 2 of the automation project:
 - Define and test the operational requirements for HCI website (version 2 features)
