@@ -177,16 +177,15 @@ webdriver.Remote()
 - provide a test interface for developers and staff
 
 ####Step 6. Feedback - Recommendations - Alternatives
-this is not a final step - it's an ongoing process  
 
 **Feedback:**  
-- actively pursue it.  invite it.  assume it's non-optional  
+- ?
 
 **Recommendations:**    
-- remain open to the outcome rather than attached to the process (regardless of who created it from scratch)  
+- ?
 
 **Alternatives:**   
-- Review alternative test methodologies and frameworks  
+- [test_alternatives.md]
 
 
 
@@ -199,8 +198,8 @@ __________________________________
     - pytests
     - Dashboard on SauceLabs
     - triggered emails
-    - In-office Alert System involving bright lights and loud sirens
-         - [triggered when Raspberry Pi detects reported error]
+    - In-office Alert System
+        - sirens and blinking lights triggered when Raspberry Pi detects error msg
 - bug tracking
     - HCI's current system?
     - Asana
