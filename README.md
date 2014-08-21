@@ -209,14 +209,9 @@ __________________________________
 _______________________________
 
 ###8. Resources and Notes
-- [Page Object Model]
-    - [Martin Fowler's article](http://martinfowler.com/bliki/PageObject.html)
-        - A page object wraps an HTML page, or fragment, with an application-specific API, allowing you to manipulate page elements without digging around in the HTML.
-    - [Page Objects on Selenium wiki](https://code.google.com/p/selenium/wiki/PageObjects)
-- [Python Testing Fundamentals](https://www.youtube.com/watch?v=jTJHQ-zQMk4) - basics of unittest, assert, and doctest
 - [Building a CI System Using SE-Builder Github, Travis and SauceLabs](http://sauceio.com/index.php/2013/03/building-a-ci-system-using-selenium-builder-github-travis-and-sauce-labs/)
     - The great thing about this setup is that if you put your site code and your tests into the same GitHub repository, then whenever you update the site code, and whenever you update the tests, Travis will rerun your Selenium tests on Sauce OnDemand – and then send you an email about whether or not they still work!
-- [pytest usage and examples](http://pytest.org/latest/example/index.html#examples)
+
 
 _______________________________
 
