@@ -8,7 +8,7 @@ ________________________
 [1. Objectives](#1-objectives)  
 [2. Required Steps](#2-required-steps)  
 [3. Assessment Phase](#3-assessment-phase)    
-[4. Scope](#4-scope)    
+[4. Test Coverage](#4-test-coverage)    
 [5. Proposed Approach](#5-proposed-approach)    
 [6. Method](#6-method)    
 [7. Defect Management](#7-defect-managment)    
@@ -60,7 +60,7 @@ _________________________
 
 _____________________________
 
-###4. Scope  
+###4. Test Coverage  
 This test plan covers basic UI functionality as would be required for general user scenarios within a wide variety of environments and platforms.
 
 ####**In-Scope:**
