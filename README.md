@@ -20,6 +20,7 @@ _________________________________
 ###1. Objectives
 - Continuously verify and validate HCI website functionality according to specs and requirements. 
 - Build and deploy a test automation framework capable of continuous verification and validation of the HCI website.
+- Devise and implement documentation conventions
 
 _________________________________
 
@@ -117,8 +118,17 @@ ___________________________________
 
 
 ###6. Method
+####Step 0. Devise test documentation procedures
+- what's the current HCI documentation method?
+- determine ongoing format (wiki? google docs, asana)
+- solidify best practices (naming conventions, layout, frequency, etc)
+- transfer, update, rebuild, rewrite, reintegrate current test documentation
+- references:
+  - [IEEE 823-2012]
+  - [IEEE 1012-2004]
+  - [IEEE 723-2014]
+
 ####Step 1. Build test suite prototype with [Selenium Builder]
-- current location of test suite prototype ==> [se-builder-testSuite] 
 - record and modify test cases
 - organize test cases as suite
 - execute test suite locally
@@ -130,10 +140,9 @@ ___________________________________
     - clumsy. lacks abstraction, won't scale
 
 ####Step 2. Create Python test scripts from prototype test suite
-- current location of ported test cases ==> [unittests]
-- from [Selenium Builder] port test cases to Python
-- fix translation issues with [Selenium WebDriver] and [Python] caused by porting test cases
-- expand [unittest] features
+- from SE-Builder prototypes, port test cases to Python
+- fix translation issues caused by porting test cases
+- expand unittest features
 - modify test cases to run from command line
 
 ####Step 3. Modify Python test scripts to run multi-platform tests remotely
@@ -143,7 +152,7 @@ webdriver.Remote()
 ```
 - update setUp() to extend test case testing environment by specifying browsers, versions and platform
 - add SauceLab account login for access to remote test servers
-- improve error reporting.  How?  Switch test framework from **unittest** to **[pytest]**
+- improve error reporting: switch test framework from **unittest** to **[pytest]**
 - why use **[pytest]**
     - improved reporting
     - run test cases as a single test suite
@@ -165,15 +174,12 @@ webdriver.Remote()
     - investigate [pytest_sauce]
 
 ####Step 4. Incorporate Continuous Integration Testing
-- objective:  trigger execution of test suite upon change to code base
+- objective:  trigger execution of test suite at regular intervals AND upon change to code base
 - connect [Github] <-> [Jenkins] <-> [SauceLabs]
 - [Travis] - continuous integration platform
 
-####Step 5. Improve test script resilience
-- make smart, resilient, robust test scripts 
-- create code abstraction
-- techniques:
-    - [Page Object Model]
+####Step 5. Improve test script resilience: implement code abstractions
+- [Page Object Model]
 - provide a test interface for developers and staff
 
 ####Step 6. Feedback - Recommendations - Alternatives
