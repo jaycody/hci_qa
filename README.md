@@ -89,7 +89,7 @@ This test plan covers basic UI functionality as would be required for general us
     - online demos functionality
     - scheduling online demos
     - user feedback popup menu
-    - 
+
 
 ####**v.2:**
 - UX/usability 
