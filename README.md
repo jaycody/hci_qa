@@ -1,4 +1,4 @@
-##Healthy Communities Institute - Website Test Plan
+##HCI - Website Test Plan
 >a test automation plan for HCI's web page:
 [www.healthycommunitiesinstitute.com](https://healthycommunitiesinstitute.com)
 
@@ -18,8 +18,8 @@ ________________________
 _________________________________
 
 ###1. Objectives
-- Continuously verify and validate HCI webapp functionality according to specs and requirements. 
-- Build and deploy a test automation framework capable of continuous verification and validation of the HCI webapp.
+- Continuously verify and validate HCI website functionality according to specs and requirements. 
+- Build and deploy a test automation framework capable of continuous verification and validation of the HCI website.
 
 _________________________________
 
@@ -37,27 +37,31 @@ _________________________________
 _________________________
 
 ###3. Assessment Phase
-1. **Learn who's who.** [Automation Engineer]
+1. **Learn who's who.**
     - introductions, roles, responsibilities
-2. **Learn the workflow and generate a UI sketch** [Automation Engineer] 
+2. **Learn the workflow and generate a UI sketch** 
     - use [interactive sketching notation] and Illustrator
-3. **Define requirements for functional testing** [HCI] 
+3. **Define requirements for functional testing** 
     - Can't test everything, so what are we most concerned with? 
     - create the input, determine the output, compare to expected 
-4. **Determine what to do with test results?**   [HCI]
+4. **Determine what to do with test results?**
     - Who receives the auto-emailed failure notifications?  SMS?
-    - Decision makers want timely reports!
-5. **Determine who writes the scripts, who runs the sripts, and who's waiting for results**  [HCI]
-6. **Identify process and next steps** [Automation Engineer]
+5. **Determine who writes the scripts, who runs the sripts, and who's waiting for results**
+6. **Identify process and next steps**
 
 #####Assessment for Version 2 of the automation project:
-- Define and test the operational requirments (version 2 features)
+- Define and test the operational requirements for HCI website (version 2 features)
     - eg. Performance, Stress and Volume
+
+#####Assessment for Version 3 of the automation project:
+- Define and test the functional and operational requirements for the **HCI Platform**
+
+
 
 _____________________________
 
 ###4. Scope  
-This test plan covers basic UI and DB functionality as would be required for general user scenarios within a wide variety of environments and platforms.
+This test plan covers basic UI functionality as would be required for general user scenarios within a wide variety of environments and platforms.
 
 ####**In-Scope:**
 - **Platforms and Environments**
@@ -67,18 +71,32 @@ This test plan covers basic UI and DB functionality as would be required for gen
         - All major browsers for all current and recent versions of Mac OS and Windows 
     
 - **Features covered in this test plan**
-    - Page Load
-    - Login
-    - Create New User Account
-    - Setup Appointment
-    - Cancel Appointment
-    - Change Appointment Date
-    - Add Service to Existing Appointment
-    - Remove Service from Existing Appointment
+    - Page Load (main)
+    - Subsidiary page loads
+    - page content
+    - internal links
+    - drop downn menus
+    - HCI newsletter subscribe
+    - Search
+    - client center
+    - client login
+    - switching client accounts
+    - client permissions
+    - promotions (eg limited-time incentives)
+    - on-demand webinar replay
+    - videos (eg overview of HCI embedded options)
+    - social-media links
+    - online demos functionality
+    - scheduling online demos
+    - user feedback popup menu
+    - 
 
 ####**v.2:**
-- UX/usability
+- UX/usability 
 - performance and load testing
+
+####**v.3+:**
+- automated test framework for the **The HCI Platform**
 
 ___________________________________
 
@@ -90,10 +108,9 @@ A Selenium-based multi-platform test automation suite written in Python and exec
 - [Selenium WebDriver]
 - [Python]
 - [SauceLabs]
-- [unittest]
 - [pytest]
-- [Jenkins]
-- [Github]
+
+
 
 ___________________________________
 
@@ -170,52 +187,7 @@ this is not a final step - it's an ongoing process
 
 **Alternatives:**   
 - Review alternative test methodologies and frameworks  
-- test automation tools change daily, act accordingly  
-- build an evolvable framework  
 
-**list of alternatives:**    
-#####[Robot Framework]
-- Robot Framework is a Python-based keyword-driven test automation framework with an easy-to-use tabular syntax for creating test cases. Its testing capabilities can be extended by test libraries implemented either with Python or Java. Users can also create new keywords from existing ones using the same simple syntax that is used for creating test cases.
-- [Intro to Robot Framework](https://www.youtube.com/watch?v=CrkfmqFbJpU) - video from uTest
-- Robot Framework, implemented with Selenium Library, allows for quick creation of keyword based Automation scripts
-Implementation of a keyword library is simplified and allows for automation scripts that are human readable. Implemented correctly, users end up with executable documents that are automation scripts and documented requirements. Robot Framework includes several built in libraries and can be extended using python
-- [RIDE] - the test data editor for Robot Framework test data
-- acceptance testing framework
-- **keyword** driven
-- selenium plugins
-- installation:
-  - pip install robotframeworks
-- good at separating test cases from the test code.
-- simple test case
-  - user can create an account and login.  ACTION: create valid user.  
-- data drive the tests:
-  - Test Cases:  passwordsTooLong..  passwordsTooShort
-- Jenkins integration with Jenkins Plugins
-- [robot + selenium video tutorials]
-- rebot plugin aggregates all reporting feedback
-
-#####[multi-mechanize] - performance test framework
-- scripts written similar to Martin's padospeed.  
-- only way to test scalalbitity and stability before your users do
-- what does it provide?
-  - report genration
-  - graphs
-  - aggregrates statistics
-  - easily scalable
-  - pure python
-- setup the config.cfg file
-  - run_time, rampup, results_ts_interval, progress_bar, xml_report
-- performance trend feedback from JENKINS
-
-#####lettuce
-- python's version of Ruby's Cucumber
-- Behavior Driven Development (BDD) done as Test Driven Development (TDD) in **Gherkin**
-- uses *Gherkin* - "business readable, domain specific language"
-```
-Given I have the input foo
-When I compute the bar of foo
-Then I see the expected number bus
-```
 
 
 
