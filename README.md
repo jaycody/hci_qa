@@ -16,7 +16,7 @@ __________________________
 
 >
 ```cli
-$ python -m unttest -v name_of_script
+$ python -m unittest -v <name_of_script>
 ```
 
 __________________________________
