@@ -1,0 +1,25 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www.healthycommunitiesinstitute.com/"
+    },
+    {
+      "type": "waitForCurrentUrl",
+      "url": "http://www.healthycommunitiesinstitute.com/"
+    },
+    {
+      "type": "assertTitle",
+      "title": "Healthy Communities Institute - The Leading Community Health Improvement Platform"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
