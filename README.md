@@ -1,5 +1,8 @@
+###HCI QA Repo
 >prototype test scripts and related QA documenation for HCI  
+
 __________________________
+
 
 ###[HCI - Website Test Plan]
 - a test automation plan for HCI's web page:  
