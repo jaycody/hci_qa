@@ -12,10 +12,10 @@ __________________________
 #####[py_test_cases]
 - Python unittests with Selenium Webdriver functionality.
 - each script verifies a specific feature of the HCI website
-- to run unittests from the command line
+- to run unittests from the command line (do not use the '.py' suffix)
+>
 ```cli
 $ python -m unttest -v name_of_script
-# do not use the '.py' suffix
 ```
 
 __________________________________
