@@ -1,0 +1,90 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www.healthycommunitiesinstitute.com/"
+    },
+    {
+      "type": "waitForCurrentUrl",
+      "url": "http://www.healthycommunitiesinstitute.com/"
+    },
+    {
+      "type": "assertTitle",
+      "title": "Healthy Communities Institute - The Leading Community Health Improvement Platform"
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "SOLUTIONS"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "ul.sub-menu"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "For Hospitals"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "For Hospitals"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "For Hospitals"
+      }
+    },
+    {
+      "type": "waitForCurrentUrl",
+      "url": "http://www.healthycommunitiesinstitute.com/hospital-solutions/"
+    },
+    {
+      "type": "verifyCurrentUrl",
+      "url": "http://www.healthycommunitiesinstitute.com/hospital-solutions/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='post-content']/div[7]/div[1]/span"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "is more than just technology"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "is more than just technology"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='post-content']/div[7]/div[1]/span"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
