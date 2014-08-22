@@ -1,0 +1,24 @@
+{
+  "type": "suite",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "scripts": [
+    {
+      "where": "local",
+      "path": "../json_test_cases/benefits_community.json"
+    },
+    {
+      "where": "local",
+      "path": "../json_test_cases/master_product_features.json"
+    },
+    {
+      "where": "local",
+      "path": "../json_test_cases/site_load.json"
+    },
+    {
+      "where": "local",
+      "path": "../json_test_cases/solutions_hospital.json"
+    }
+  ],
+  "shareState": false
+}
