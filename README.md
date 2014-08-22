@@ -5,9 +5,9 @@ __________________________
 
 ####repo directories:
 #####[json_test_cases]
-- test script prototypes recorded in the Firefox plugin: Selenium Builder
-- each script a test case verifying a specific feature of the HCI website.
-- to run tests: import individual json files into Firefox's Selenium Buidler
+- json files representing test script prototypes recorded in the Firefox plugin: Selenium Builder
+- each script is a test case that verifies a specific feature of the HCI website.
+- to run the tests: import individual json files into Firefox's Selenium Buidler
 
 #####[py_test_cases]
 - Python unittests with Selenium Webdriver functionality.
