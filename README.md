@@ -4,7 +4,7 @@
 __________________________
 
 
-####[Test Plan]
+####[HCI Website Test Plan]
 - a test automation plan for HCI's website: [www.healthycommunitiesinstitute.com] 
 
 ________________________
@@ -18,7 +18,7 @@ ________________________
 
 
 
-[Test Plan]:https://github.com/jayjaycody/hci_qa/wiki/HCI-Website-Test-Plan
+[HCI Website Test Plan]:https://github.com/jayjaycody/hci_qa/wiki/HCI-Website-Test-Plan
 [Healthy Communities Institute]:https://healthycommunitiesinstitute.com
 [www.healthycommunitiesinstitute.com]:https://healthycommunitiesinstitute.com
 [HCI QA Wiki]:https://github.com/jayjaycody/hci_qa/wiki
