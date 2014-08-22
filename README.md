@@ -3,14 +3,16 @@
 
 __________________________
 
+####Scripts:
+#####[json_test_cases]
 
-####[HCI Website Test Plan]
+
+__________________________________
+####Documenation:
+#####[HCI Website Test Plan]
 - a test automation plan for HCI's website: [www.healthycommunitiesinstitute.com] 
 
-________________________
-
-
-####[HCI QA Wiki]
+#####[HCI QA Wiki]
 - a wiki for test documentation and qa procedures related to HCI
 
 
