@@ -1,4 +1,16 @@
+#!/usr/bin/env python -tt
 # -*- coding: utf-8 -*-
+
+""" jstephens - qa tryouts - Healthy Communities Institute 
+
+Script to test the presence of the QA/Support Engineer job posting 
+   located on the 'Join Our Team' page of the HCI website.
+
+"""
+
+
+
+
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time, unittest
@@ -16,6 +28,8 @@ class master_product_features(unittest.TestCase):
         self.wd.implicitly_wait(60)
     
     def test_master_product_features(self):
+        """Verify the presenece of the QA job posting"""
+        
         success = True
         wd = self.wd
         wd.get("http://www.healthycommunitiesinstitute.com/")
