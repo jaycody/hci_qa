@@ -3,7 +3,7 @@
 [www.healthycommunitiesinstitute.com](https://healthycommunitiesinstitute.com)  
 ________________________
 
-#####see [HCI QA wiki](github.com/jayjaycody/hci_qa.wiki) for more test related documentation
+#####see [HCI QA wiki](https://github.com/jayjaycody/hci_qa/wiki) for more test related documentation
 
 ______________________
 
