@@ -1,8 +1,10 @@
 ##HCI - Website Test Plan
 >a test automation plan for HCI's web page:
-[www.healthycommunitiesinstitute.com](https://healthycommunitiesinstitute.com)
-
+[www.healthycommunitiesinstitute.com](https://healthycommunitiesinstitute.com)  
+see [HCI QA wiki](github.com/jayjaycody/hci_qa.wiki) for more test related documentation
 ________________________
+
+
 
 ###Overview:
 [1. Objectives](#1-objectives)  
