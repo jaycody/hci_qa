@@ -227,6 +227,7 @@ __________________________________
 - triggered emails
 - In-office Alert System
     - sirens and blinking lights triggered when Raspberry Pi detects error msg
+
 #####bug tracking
 - HCI's current system?
 - Asana
