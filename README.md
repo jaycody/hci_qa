@@ -21,4 +21,4 @@ ________________________
 [Test Plan]:https://github.com/jayjaycody/hci_qa/wiki/HCI-Website-Test-Plan
 [Healthy Communities Institute]:https://healthycommunitiesinstitute.com
 [www.healthycommunitiesinstitute.com]:https://healthycommunitiesinstitute.com
-[QA Wiki]:https://github.com/jayjaycody/hci_qa/wiki
+[HCI QA Wiki]:https://github.com/jayjaycody/hci_qa/wiki
