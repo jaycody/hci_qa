@@ -1,19 +1,22 @@
-###HCI QA Repo
->prototype test scripts and related QA documenation for HCI  
+###HCI - prototype QA repo
+>test scripts and related QA documenation for the Healthy Communities Insitute  
 
 __________________________
 
 
-###[HCI - Website Test Plan]
+####[Test Plan]
 - a test automation plan for HCI's web page:  
 >
 [www.healthycommunitiesinstitute.com](https://healthycommunitiesinstitute.com)  
+
 ________________________
 
-#####see [HCI QA wiki](https://github.com/jayjaycody/hci_qa/wiki) for more test related documentation
+
+####[QA Wiki](https://github.com/jayjaycody/hci_qa/wiki)
 
 
 
 
 
-[HCI - Website Test Plan]:https://github.com/jayjaycody/hci_qa/wiki/HCI-Website-Test-Plan
+
+[Test Plan]:https://github.com/jayjaycody/hci_qa/wiki/HCI-Website-Test-Plan
