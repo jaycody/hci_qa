@@ -6,6 +6,8 @@
 Script to test the presence of the QA/Support Engineer job posting 
    located on the 'Join Our Team' page of the HCI website.
 
+
+$ python -m unittest -v master_product_features
 """
 
 
@@ -29,7 +31,7 @@ class master_product_features(unittest.TestCase):
     
     def test_master_product_features(self):
         """Verify the presenece of the QA job posting"""
-        
+
         success = True
         wd = self.wd
         wd.get("http://www.healthycommunitiesinstitute.com/")
