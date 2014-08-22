@@ -3,9 +3,20 @@
 
 __________________________
 
-####Scripts:
+####repo directories:
 #####[json_test_cases]
+- test script prototypes recorded in the Firefox plugin: Selenium Builder
+- each script a test case verifying a specific feature of the HCI website.
+- to run tests: import individual json files into Firefox's Selenium Buidler
 
+#####[py_test_cases]
+- Python unittests with Selenium Webdriver functionality.
+- each script verifies a specific feature of the HCI website
+- to run unittests from the command line
+```cli
+$ python -m unttest -v name_of_script
+# do not use the '.py' suffix
+```
 
 __________________________________
 ####Documenation:
@@ -24,3 +35,4 @@ __________________________________
 [Healthy Communities Institute]:https://healthycommunitiesinstitute.com
 [www.healthycommunitiesinstitute.com]:https://healthycommunitiesinstitute.com
 [HCI QA Wiki]:https://github.com/jayjaycody/hci_qa/wiki
+[json_test_cases]:https://github.com/jayjaycody/hci_qa/tree/master/json_test_cases
